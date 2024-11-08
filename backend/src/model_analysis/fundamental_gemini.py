@@ -10,8 +10,8 @@ load_dotenv()
 os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGSMITH_TRACING"] = "true"
 
+#Function to generate summary and insights from advanced fundamenal info
 def generate_summary_and_insights_from_fundamentals(stock_info):
-    # Extracting major holders, institutional, mutual fund, insider transactions, and earnings/revenue estimates
     major_holders = stock_info.get('Major Holders', 'No data available')
     institutional_holders = stock_info.get('Institutional Holders', 'No data available')
     mutual_fund_holders = stock_info.get('Mutual Fund Holders', 'No data available')
