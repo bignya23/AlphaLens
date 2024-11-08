@@ -40,7 +40,7 @@ The platform architecture is designed for efficiency and scalability, integratin
 
 - **Sentiment Analysis and Summarization**:
   - **FinBert**: Classifies news sentiment as positive, negative, or neutral.
-  - **Alphalens leverages the Gemini 1.5 Flash model for advanced sentiment analysis and natural language understanding, enhancing the accuracy of financial news classification and sentiment detection.
+  - **Alphalens** leverages the Gemini 1.5 Flash model for advanced sentiment analysis and natural language understanding, enhancing the accuracy of financial news classification and sentiment detection.
 
 ### Deployment and Infrastructure
 
