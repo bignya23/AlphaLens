@@ -12,7 +12,6 @@ import psycopg2, os, torch
 
 
 app = Flask(__name__)
-# frontend.config['SECRET_KEY'] = 'your_secret_key'
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Load environment variables
@@ -40,12 +39,8 @@ def get_companies():
         data = cur.fetchall()
         
         data = [{"company_name": row[0], "stock_symbol": row[1]} for row in data]
-
-        # Close cursor and connection
         cur.close()
         conn.close()
-        
-        # Return data as JSON
         return jsonify(data)
         
     except Exception as e:
@@ -60,7 +55,6 @@ def generate_response():
 
     if user_query:
         response = get_response(user_query)
-        # response = get_response(user_query)
         print(response)
         return jsonify({"reply": response})
     else:
@@ -72,8 +66,6 @@ def download_pdf():
     symbol = request.args.get('symbol')
     stock_info = get_advanced_info(symbol)
     pdf_path = generate_pdf(symbol, stock_info)
-
-    # Send the file as a download
     return send_file(pdf_path, as_attachment=True)
 
 @socketio.on('fetch_data')
@@ -149,5 +141,3 @@ def handle_fetch_data(data):
         emit('error', {'message': f'Error generating fundamental insights: {str(e)}'})
         return
 
-if __name__ == '__main__':
-    socketio.run(app, debug=True)
