@@ -11,6 +11,7 @@ load_dotenv()
 os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGSMITH_TRACING"] = "true"
 
+#Function to send request
 def send_request(prompt):
     api_key = os.getenv("GEMINI_API_KEY")
     if api_key is None:
@@ -44,6 +45,7 @@ def join_headlines(headlines_df):
 
     return headlines_text
 
+#Function for bullish insights
 def bullish(headlines_df):
 
     headlines_text = join_headlines(headlines_df)
@@ -70,6 +72,7 @@ def bullish(headlines_df):
 
     return bullish_summary
 
+#Function for bearish insights
 def bearish(headlines_df):
 
     headlines_text = join_headlines(headlines_df)
@@ -93,7 +96,7 @@ def bearish(headlines_df):
 
     return bearish_summary
 
-
+#Function to generate invesment insights
 def investment_insights(headlines_df):
 
     headlines_text = join_headlines(headlines_df)
