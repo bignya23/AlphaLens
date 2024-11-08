@@ -11,6 +11,7 @@ load_dotenv()
 os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGSMITH_TRACING"] = "true"
 
+#Function to send_request
 def send_request(prompt):
     api_key = os.getenv("GEMINI_API_KEY")
     if api_key is None:
@@ -93,7 +94,7 @@ def bearish(headlines_df):
 
     return bearish_summary
 
-
+#Function to generate investment insights
 def investment_insights(headlines_df):
 
     headlines_text = join_headlines(headlines_df)
@@ -119,10 +120,3 @@ def investment_insights(headlines_df):
     investment_insight = send_request(prompt_summary)
 
     return investment_insight
-
-
-if __name__ == '__main__':
-    headlines_df = news_fetcher.get_news("tesla", os.getenv("NEWS_API_KEY"))
-    response = bullish(headlines_df)
-
-    print(response)
