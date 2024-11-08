@@ -1,13 +1,11 @@
 #  WEBSITE LINK : https://alphalens.tech
 
 
-![WhatsApp Image 2024-11-08 at 14 02 53_b5584ccb](https://github.com/user-attachments/assets/bb5e3bb0-3847-4155-8edb-9212a65c73fc)
 
 
+# AlphaLens: A Functional Platform for Financial News Classification and Sentiment Analysis
 
-# SentifyAI: A Functional Platform for Financial News Classification and Sentiment Analysis
-
-**SentifyAI** is a comprehensive platform that classifies financial news articles, performs sentiment analysis, and provides real-time investment insights. The platform integrates machine learning models with a user-friendly interface, offering essential financial data, sentiment classifications, and visual market trends for investors and financial analysts.
+**AlphaLens** is a comprehensive platform that classifies financial news articles, performs sentiment analysis, and provides real-time investment insights. The platform integrates machine learning models with a user-friendly interface, offering essential financial data, sentiment classifications, and visual market trends for investors and financial analysts.
 
 ## Key Features
 
@@ -46,7 +44,7 @@ The platform architecture is designed for efficiency and scalability, integratin
 
 ### Deployment and Infrastructure
 
-SentifyAI is hosted on Vultr Cloud Compute, optimized for scalability, security, and performance:
+AlphaLens is hosted on Vultr Cloud Compute, optimized for scalability, security, and performance:
 
 - **DNS Management and Firewall**: Vultr DNS and firewall configurations ensure secure, reliable data access and content delivery.
 - **Load Balancer**: Distributes traffic across servers, maintaining platform stability during peak loads.
@@ -58,7 +56,6 @@ SentifyAI is hosted on Vultr Cloud Compute, optimized for scalability, security,
 
 - **yFinance**: Retrieves advanced stock data, providing insights into financial performance and ratios.
 - **FinBert**: Customizes sentiment classification for financial news, providing relevant sentiment data to users.
-- **Llama2 13B Model**: Processes news to generate summaries and market insights through Vultr’s serverless infrastructure.
 
 ## API Documentation
 
@@ -71,9 +68,9 @@ SentifyAI uses [NewsAPI](https://newsapi.org/) to pull real-time financial news 
 
 
 
-# SentifyAI
+# AlphaLens
 
-SentifyAI is a sentiment analysis platform that provides insights into company news, stock sentiment, and fundamental analysis.
+AlphaLens is a sentiment analysis platform that provides insights into company news, stock sentiment, and fundamental analysis.
 
 ## Setup and Usage Instructions
 
@@ -86,7 +83,7 @@ Ensure you have the following installed:
 ### Step 1: Clone the Repository
 Clone the SentifyAI GitHub repository to your local machine. Open a terminal or command prompt and run:
 ```bash
-git clone https://github.com/CJKonwar/SentifyAI.git
+https://github.com/bignya23/AlphaLens.git
 ```
 
 
@@ -173,21 +170,4 @@ The website should now be accessible on your local server. Check the terminal ou
 - **Select a Company**: Once the website is running, go to the top search bar and click on "Select Company." This will display a list of all S&P 500 companies. Choose a company to analyze.
   
 - **Chatbot Assistance**: Use the chatbot located in the bottom right corner to ask any finance or stock market-related questions. The chatbot can provide insights and help with your analysis.
-
-## Images of our website
-![WhatsApp Image 2024-11-08 at 14 02 53_1607ed97](https://github.com/user-attachments/assets/fad8ef18-77fd-4ae7-a472-982efbba170c)
-
-
-![WhatsApp Image 2024-11-08 at 14 02 53_01d26f0b](https://github.com/user-attachments/assets/d83756ed-aa4c-420d-958b-07cca2ed9d7b)
-
-![WhatsApp Image 2024-11-08 at 14 02 53_dc6b9ff6](https://github.com/user-attachments/assets/c125ded0-42b3-4a0b-880e-f4f4a7f28493)
-
-
-
-![WhatsApp Image 2024-11-08 at 14 14 25_c5496af7](https://github.com/user-attachments/assets/25c1d386-8718-4bfd-b088-6fdedf8b7cec)
-
-
-
-
-
 
