@@ -25,7 +25,6 @@ def analyze_sentiment(headlines_df, sentiment_pipeline):
         sentiments.append(sentiment)
 
     # Adding sentiment information to the DataFrame
-    # print(sentiments)
     headlines_df['sentiment'] = [sentiment['label'] for sentiment in sentiments]
     headlines_df['confidence'] = [sentiment['score'] for sentiment in sentiments]
     return headlines_df
