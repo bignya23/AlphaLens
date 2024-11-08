@@ -40,7 +40,7 @@ The platform architecture is designed for efficiency and scalability, integratin
 
 - **Sentiment Analysis and Summarization**:
   - **FinBert**: Classifies news sentiment as positive, negative, or neutral.
-  - **Llama2 13B Model**: Deployed on Vultr, provides summaries and investment insights from news and financial data.
+  - **Alphalens leverages the Gemini 1.5 Flash model for advanced sentiment analysis and natural language understanding, enhancing the accuracy of financial news classification and sentiment detection.
 
 ### Deployment and Infrastructure
 
@@ -61,7 +61,7 @@ AlphaLens is hosted on Vultr Cloud Compute, optimized for scalability, security,
 
 ### NewsAPI Integration
 
-SentifyAI uses [NewsAPI](https://newsapi.org/) to pull real-time financial news from a range of reputable sources. The "Top Headlines" endpoint allows for targeted searches by company name, keyword, and other filters, providing timely news content for sentiment analysis. For detailed usage and authentication guidelines, refer to the [NewsAPI documentation](https://newsapi.org/docs).
+Alphalens uses [NewsAPI](https://newsapi.org/) to pull real-time financial news from a range of reputable sources. The "Top Headlines" endpoint allows for targeted searches by company name, keyword, and other filters, providing timely news content for sentiment analysis. For detailed usage and authentication guidelines, refer to the [NewsAPI documentation](https://newsapi.org/docs).
 
 ---
 
