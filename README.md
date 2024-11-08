@@ -47,7 +47,6 @@ The platform architecture is designed for efficiency and scalability, integratin
 AlphaLens is hosted on Vultr Cloud Compute, optimized for scalability, security, and performance:
 
 - **DNS Management and Firewall**: Vultr DNS and firewall configurations ensure secure, reliable data access and content delivery.
-- **Load Balancer**: Distributes traffic across servers, maintaining platform stability during peak loads.
 - **Pull and Push Zones**:
   - **Pull Zone**: Caches content for faster access.
   - **Push Zone**: Ensures fresh data distribution for real-time updates.
@@ -81,7 +80,7 @@ Ensure you have the following installed:
 - **Node.js** and **npm** (Node Package Manager)
 
 ### Step 1: Clone the Repository
-Clone the SentifyAI GitHub repository to your local machine. Open a terminal or command prompt and run:
+Clone the Alphalens GitHub repository to your local machine. Open a terminal or command prompt and run:
 ```bash
 https://github.com/bignya23/AlphaLens.git
 ```
@@ -90,9 +89,9 @@ https://github.com/bignya23/AlphaLens.git
 ### Step 2: Install Python Requirements
 Navigate to the project folder and install the required Python dependencies:
 
-1. Move to the SentifyAI folder:
+1. Move to the Alphalens folder:
     ```bash
-    cd SentifyAI
+    cd Alphalens
     ```
 
 2. Install the required packages:
@@ -112,6 +111,14 @@ NEWS_API_KEY=your_news_api_key_here
 
 # Hugging Face API token for accessing NLP models or datasets from Hugging Face.
 hf_token=your_hugging_face_token_here
+
+# Gemini api token for assessing gemini 1.5 flash
+GEMINI_API_KEY = your_gemini_api_here
+
+#Langchain api token to integrate langchain_services
+LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+LANGCHAIN_API_KEY= your_langchain_api_key
+LANGCHAIN_PROJECT = your_project_name
 
 # API key for interacting with Vultr cloud services.
 VULTR_API=your_vultr_api_key_here
