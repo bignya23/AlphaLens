@@ -9,14 +9,14 @@
 
 ## Key Features
 
-- **User-Friendly Interface**: Enter a company name, and SentifyAI fetches the corresponding stock symbol and provides:
+- **User-Friendly Interface**: Enter a company name, and AlphaLens fetches the corresponding stock symbol and provides:
   - Investment insights, including major and institutional holders
   - Analysts' target prices and recent news headlines with sentiment classifications
   - An embedded TradingView chart for stock performance visualization
 
 - **Classification Engine**: Utilizes FinBert, a financial-specific NLP model, to classify news sentiment (positive, negative, or neutral) for targeted and accurate analysis.
 
-- **Sentiment Analysis Module**: Powered by the Llama2 13B model, deployed on Vultr’s serverless inference infrastructure, this module summarizes news articles and provides in-depth market insights.
+- **Sentiment Analysis Module**: Powered by the Gemini 1.5 - Flash model,  this module summarizes news articles and provides in-depth market insights.
 
 - **Real-Time Processing**: News articles and financial data are processed in real-time, keeping insights current and reliable.
 
@@ -40,7 +40,7 @@ The platform architecture is designed for efficiency and scalability, integratin
 
 - **Sentiment Analysis and Summarization**:
   - **FinBert**: Classifies news sentiment as positive, negative, or neutral.
-  - **Alphalens** leverages the Gemini 1.5 Flash model for advanced sentiment analysis and natural language understanding, enhancing the accuracy of financial news classification and sentiment detection.
+  - **Alphalens** leverages the Gemini 1.5 - Flash model for advanced sentiment analysis and natural language understanding, enhancing the accuracy of financial news classification and sentiment detection.
 
 ### Deployment and Infrastructure
 
