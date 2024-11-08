@@ -12,7 +12,6 @@ import psycopg2, os, torch
 
 
 app = Flask(__name__)
-# frontend.config['SECRET_KEY'] = 'your_secret_key'
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Load environment variables
@@ -44,12 +43,9 @@ def get_companies():
         # Close cursor and connection
         cur.close()
         conn.close()
-        
-        # Return data as JSON
         return jsonify(data)
         
     except Exception as e:
-        # If an error occurs, print it and return an error message
         print(f"Error connecting to the database: {e}")
         return jsonify({"error": "Failed to fetch companies"}), 500
 
@@ -60,7 +56,6 @@ def generate_response():
 
     if user_query:
         response = get_response(user_query)
-        # response = get_response(user_query)
         print(response)
         return jsonify({"reply": response})
     else:
@@ -149,5 +144,3 @@ def handle_fetch_data(data):
         emit('error', {'message': f'Error generating fundamental insights: {str(e)}'})
         return
 
-if __name__ == '__main__':
-    socketio.run(app, debug=True)
