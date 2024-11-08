@@ -9,13 +9,13 @@ os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGSMITH_TRACING"] = "true"
 
 def get_response(question):
-    # Ensure GEMINI_API_KEY is set
+    
     api_key = os.getenv("GEMINI_API_KEY")
     if api_key is None:
         raise EnvironmentError("GEMINI_API_KEY is not set in the environment.")
     os.environ["GOOGLE_API_KEY"] = api_key
 
-    # Define the prompt
+    # Define the prompt as required
     prompt = ChatPromptTemplate.from_template(
         """
         Answer every question asked in detail. 
